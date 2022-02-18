@@ -8,9 +8,9 @@
 body{
 	background-color: #5584AC!important;
 	/*color: #22577E!important;*/
-/*	background:url(./images/bg1.png);
-	background-size:cover;
-	background-attachment: fixed;*/
+	background:url(images/background/texturedbg2.png)!important;
+	background-size:cover!important;
+	background-attachment: fixed!important;
 }
 
 
