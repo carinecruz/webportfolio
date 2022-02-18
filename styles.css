@@ -4,10 +4,15 @@
 	box-sizing: border-box;
 }
 
+
 body{
 	background-color: #5584AC!important;
 	/*color: #22577E!important;*/
+/*	background:url(./images/bg1.png);
+	background-size:cover;
+	background-attachment: fixed;*/
 }
+
 
 /*----fonts-------*/
 
@@ -15,6 +20,10 @@ main{
 	font-family: 'Spinnaker', sans-serif;
 	font-size: 1rem;
 	color: #22577E;
+	/*background-color: #5584AC;*/
+/*	background:url(images/background/bg1.png);
+	background-size:cover;
+	background-attachment: fixed;*/
 }
 
 header{
@@ -82,8 +91,15 @@ header{
 
 .jumboImg:hover{
 	background-color: #DAAF61;
-	border: #DAAF61;
+	border: #DAAF61 solid;
 	border-width: thick;
+}
+
+.logoImg{
+	width: 58%;
+	height: auto;
+/*	margin: auto 0;
+	text-align: center;*/
 }
 
 /*--- back ground color ----*/
@@ -156,6 +172,11 @@ h3{
 
 
 /* ------- links styling ---------- */
+
+a{
+	color: #406882!important;
+}
+
 a:hover{
 	color: #DAAF61;
 	text-decoration: none;
@@ -212,12 +233,14 @@ h2>.btn:focus{
 
 /*------accordion stlying------*/
 .card-body{
-	/*background: #F6F2D4;*/
+	/*background: #F8F9FA;*/
+	background: #22577E;
 	text-align: center;
 }
 
 .card-header{
-	background: #F6F2D4;
+	background: #F8F9FA; /*white*/
+	/*background-color: #F6F2D4;*/
 	text-align: center;
 	/*padding: 10px;*/
 	font-family: 'Chango', cursive;
