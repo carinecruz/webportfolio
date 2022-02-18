@@ -1,0 +1,282 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #5584AC!important;
+	/*color: #22577E!important;*/
+}
+
+/*----fonts-------*/
+
+main{
+	font-family: 'Spinnaker', sans-serif;
+	font-size: 1rem;
+	color: #22577E;
+}
+
+header{
+	font-family: 'Spinnaker', sans-serif;
+	font-size: 1.2rem;
+	color: #22577E;
+}
+
+
+/*--- navigation bar----*/
+.navbar{
+	background-color: #22577E;
+	font-family: 'Blinker', sans-serif;
+	font-size: 1.2rem;
+}
+
+.navbar a{
+	color: #F6F2D4;
+/*	margin-left: 1.5rem;
+	margin-right: 1.5rem;*/
+	padding-left: 4rem;
+	padding-right: 4rem;
+	transition: border-radius 1s, background-color 1s;
+}
+
+.navbar a:hover{
+	background-color:#5584AC;
+	color: #22577E;
+	font-weight: bold;
+	border-radius: 15px;
+
+}
+
+/*---- foooter -----*/
+.footer{
+	background-color: #22577E;
+	color: #F6F2D4;
+	font-family: 'Blinker', sans-serif;
+	font-size: 1.2rem;	
+}
+
+/*----- Images/Icons ------*/
+.skills{
+/*	height:5%;
+	width: auto;*/
+	width: 15%;
+	height: auto;
+	padding: 10px;
+}
+
+.social{
+	width: 10%;
+	height: auto;
+}
+
+.contactHolder>div>a>img:hover{
+	opacity: 50%;
+}
+
+.jumboImg{
+	border-width: thick;
+	border: #22577E solid;
+	background-color: #22577E;
+}
+
+.jumboImg:hover{
+	background-color: #DAAF61;
+	border: #DAAF61;
+	border-width: thick;
+}
+
+/*--- back ground color ----*/
+.base{
+	background-color: #F6F2D4;
+	margin: 3rem auto;
+	padding: 1.5rem;
+}
+
+.base2{
+	background-color: #D2EDEA;
+	margin: 3rem auto;
+	padding: 1.5rem;
+}
+
+.contactHolder{
+	background-color: #D2EDEA;
+}
+
+.project{
+	background-color: #F6F2D4;
+}
+
+.project:hover{
+	background-color: white;
+}
+
+/*-----Jumbotron----*/
+.jumbotron{
+	margin: 0;
+}
+
+.jImage{
+	bottom: 0;
+	height: auto;
+	position: absolute;
+	right: 0;
+	width: 45%;
+}
+
+/*-------headers----------*/
+h1{
+	color: #DAAF61;
+	font-family: 'Chango', cursive;
+}
+
+
+h2{
+	text-align: center;
+	color: #DAAF61;
+	font-family: 'Chango', cursive;
+}
+
+
+h3{
+	border-bottom: dotted 5px;
+	display: inline-block;
+	/*text-align: center;*/
+	/*margin-bottom: 5rem;*/
+}
+
+
+/*h5{
+	border-bottom: 5px dotted;
+	display: inline;
+	font-weight: bold;
+}*/
+	/*text-decoration: underline*/;
+	/*margin-bottom: 2rem;*/
+
+
+/* ------- links styling ---------- */
+a:hover{
+	color: #DAAF61;
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+.custLink:hover{
+	color: #DAAF61;
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+/*h5 + a:hover{
+	text-decoration: none;
+
+}*/
+
+a:visited{
+	text-decoration: none;
+}
+
+.btn-link:hover{
+	text-decoration: none;
+}
+
+.btn-lnk: focus{
+	text-decoration: none;
+}
+
+.btn-link{
+	text-decoration: none;
+}
+
+/*-----button------*/
+.btnCust{
+	border-width: 2px;
+	border-color: #22577E;
+	color: #22577E;
+	font-weight: bold;
+}
+
+.btnCust:hover{
+	background-color: #22577E;
+	color: white;
+}
+
+.btnCust:focus{
+	box-shadow: none;
+}
+
+h2>.btn:focus{
+	box-shadow: none;
+}
+
+/*------accordion stlying------*/
+.card-body{
+	/*background: #F6F2D4;*/
+	text-align: center;
+}
+
+.card-header{
+	background: #F6F2D4;
+	text-align: center;
+	/*padding: 10px;*/
+	font-family: 'Chango', cursive;
+}
+
+.cardAcknowledgement{
+	background-color: #D2EDEA;
+	font-family: 'Spinnaker', cursive;!important
+}
+/*----- horizontal rules---------*/
+.jumbotron hr{
+	border-width: 5px;
+	border-top: 10px dotted;
+	width: 75%;
+}
+
+ul hr{
+	border-top: 5px dotted;
+	width: 5%;
+	text-align: center;
+	padding: 0;
+}
+
+/*---- override -----*/
+.rounded{
+	border-radius: 15px!important;
+}
+
+/*---- Media Query----- */
+@media(min-width:426px ){
+	h5{
+	border-bottom: dotted 5px;
+	display: inline-block;
+	}
+}
+
+@media( max-width: 425px){
+	.jImage{
+		display: none;
+	}
+
+	.jumbotron hr{
+		width: 100%;
+	}
+
+	.skills{
+		width: 40%;
+		height: auto;
+	}
+
+	.social{
+		width: 20%;
+		height: auto;
+		padding-bottom: 1.5rem;
+	}
+
+	h5{
+		display: block;
+		text-align: center;
+		border-bottom: dotted 5px;
+	}
+}

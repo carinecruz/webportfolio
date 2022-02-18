@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Responsive Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- favicon -->
+	<link rel="icon" href="images/logo/carine.ico">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Blinker&family=Capriola&family=Chango&family=Great+Vibes&family=Spinnaker&display=swap" rel="stylesheet">
+
+	<title>Carine Cruz | Portfolio</title>
+</head>
+<body>
+
+
+	<!-- #---------LANDING PAGE---------- -->
+	<header>
+		<div class="jumbotron container-fluid min-vh-100" id="Home">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-5 text-center text-md-right">
+					<img src="images/doodle/base-head.png" class="img-fluid rounded-circle w-75 jumboImg" alt="Carine Avatar">
+				</div>
+				<div class="col-12 col-md-7 text-center text-md-left">
+					<h1 class="display-4">Hi! I am Carine.</h1>
+					<hr class="my-4">
+					<p class="lead">I am a full-stack web developer.</p>
+					<p>I can help create the website that you want.</p>
+					<a class="btn btn-lg btnCust" href="#About" role="button">Interested? Let's explore!</a>
+				</div>
+			</div>
+			<!-- end row -->
+			<img src="images/doodle/image0.png" class="jImage" alt="">
+		</div>
+
+		<!-- end jumbotron -->
+			<!-- end jumbotron -->
+	</header>
+	<!-- #--------LANDING PAGE END------- -->
+
+		<!-- -----NAVIGATION BAR----------- -->
+	<nav class="navbar navbar-expand-md sticky-top m-0 p-0">
+	<!-- 		<a class="navbar-brand" href="#Home">
+			<img src="images/logo/letter-c.png" class="img-fluid w-25"alt="Carine Logo">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span> -->
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav d-flex mx-auto">
+				<li class="nav-item">
+					<a class="nav-link px-5" href="#Home">Home</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link px-5" href="#About">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link px-5" href="#Projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link px-5" href="#Contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- ----NAVIGATION BAR END-------- -->
+	
+	<main class="container-fluid text-justify">
+		<!-- #--------ABOUT ME----------- -->
+		<div id="About" class="container rounded base">
+			
+			<div class="row">
+				<!-- AboutMe Image start-->
+				<div class="col-12 col-md-4 order-md-2 p-3">
+					<!-- carousel  start-->
+					<div id="carouselMe" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-interval="90000">
+					      		<img src="images/doodle/me-about.png" class="d-block img-fluid" alt="Carine doodle">
+					    	</div>
+					    	<div class="carousel-item">
+					      		<img src="images/me/me_portrait.jpg" class="img-fluid rounded" alt="Carine portrait">
+					    	</div>
+					  	</div>
+					 	<button class="carousel-control-prev" type="button" data-target="#carouselMe" data-slide="prev">
+					    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    	<span class="sr-only">Previous</span>
+					  	</button>
+					  	<button class="carousel-control-next" type="button" data-target="#carouselMe" data-slide="next">
+					    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    	<span class="sr-only">Next</span>
+					  	</button>
+					</div>
+					<!-- carousel end -->
+				</div>
+				<!-- AboutMe Image End -->
+				
+				<div class="col-12 col-md-8">
+				<!-- About me Text -->
+				<div>
+					<h2 class="m-3">Get To Know Me!</h2>
+					<div class="bg-light rounded p-4 mb-4">
+						<p>I am Carine Denise Cruz. I have graduated from Centro Escolar University with Bachelor of Science in Computer Science and Information System in 2010. I have worked at a bank as an application support for clearing operations and corebanking.</p>
+						<p>I have joined <a href="https://zuitt.co/" target="_blank" class="custLink">Zuitt Boot Camp</a> in early 2022 where I learned MERN stack (Mongo Express Database, React Javascript, Node Javascript).</p>
+						<p>You can view my social media accounts <a href="#socialMediaAccts" class="custLink">here</a>.</p>
+					</div>
+				</div>
+
+				<!-- Skills Accordion-->
+				<div class="accordion" id="accordionSkills">
+					<!-- Web Development Skills -->
+					<div class="card">
+						<!-- accordion web development header -->
+				    	<div class="card-header skillAccordion" id="headingWebDevSkills p-2">
+				      		<a href="#collapseWebDevSkills" data-toggle="collapse" class="my-2 text-center custLink">Web Development Skills</a>				      		
+				    	</div>
+
+				    	<!-- accordion web development body -->
+				    	<div id="collapseWebDevSkills" class="collapse" aria-labelledby="headingWebDevSkills" data-parent="#accordionSkills">
+				      		<div class="card-body text-center bg-light d-flex flex-wrap justify-content-center">
+				        		<img class="img-fluid skills" src="images/skills/logo-html5.png" alt="HTML5" title="HTML5">
+				        		<img class="img-fluid skills" src="images/skills/logo-css3.png" alt="CSS3" title="CSS3">
+				        		<img class="img-fluid skills" src="images/skills/logo-javascript.png" alt="Javascript" title="Javascript">
+				        		<img class="img-fluid  skills" src="images/skills/logo-bootstrap.png" alt="Bootstrap" title="Bootstrap">
+				        		<img class="img-fluid  skills" src="images/skills/logo-expressjs.png" alt="Express JS" title="Express JS">
+				        		<img class="img-fluid skills" src="images/skills/logo-rest.png" alt="Rest JS" title="Rest JS">
+				        		<img class="img-fluid skills" src="images/skills/logo-react.png" alt="React JS" title="React JS">
+				        		<img class="img-fluid skills" src="images/skills/logo-nodejs.png" alt="Node JS" title="Node JS">
+				        		<img class="img-fluid skills" src="images/skills/logo-mongodb.png" alt="Mongo DB" title="Mongo DB">
+				        		<img class="img-fluid skills" src="images/skills/logo-heroku.png" alt="Heroku" title="Heroku">
+				        		<img class="img-fluid skills" src="images/skills/logo-postman.png" alt="Postman" title="Postman">
+				        		<img class="img-fluid skills" src="images/skills/logo-gitlab-ci-cd.png" alt="Gitlab CI/CD" title="Gitlab CI/CD">
+				        		<img class="img-fluid skills" src="images/skills/logo-git.png" alt="Git" title="Git">
+				      		</div>
+				    	</div>
+				    	<!-- accordion web development body end -->
+				  	</div>
+				  	<!-- Web development skill end -->
+
+				  	<!-- Other Skills -->
+				  	<div class="card">
+				  		<!-- accordion other skills header -->
+				    	<div class="card-header" id="headingOtherSkills">
+				    		<a href="#collapseOtherSkills" data-toggle="collapse" class="my-2 text-center custLink">Other Skills</a>	
+				    	</div>
+				    	<!-- accordion other skills header end -->
+				    	<!-- accordion other skills body start -->
+				    	<div id="collapseOtherSkills" class="collapse" aria-labelledby="headingOtherSkills" data-parent="#accordionSkills">
+				      		<div class="card-body mx-auto bg-light d-flex flex-wrap justify-content-center">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-aix.png" alt="AIX" title="AIX">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-finacle.jpg" alt="Finacle scirpt" title="Finacle script">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-java.jpg" alt="Java" title="Java">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-oracle.png" alt="Oracle" title="Oracle">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-os2.png" class="bg-black" alt="Outsystems" title="Certified Outsystems Associate Mobile Developer">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-postgre.png" alt="PostgreSQL" title="PostGreSQL">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-safe.png" alt="Safe5" title="Certified Safe 5 SM">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-sql.png" alt="MS SQL" title="Microsoft SQL">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-vb.png" alt="VB" title="VB.Net">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-pm.png" alt="PM" title="Project Management">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-sw.png" alt="SW Testing" title="Software Testing">
+				        		<img class="img-fluid skills" src="images/skills/resized/logo-ps.png" alt="PS" title="Adobe Photoshop">
+				      		</div>
+				    	</div>
+				    	<!-- accordion other skills body end -->
+				  	</div>
+				  	<!-- Other skills end -->
+				</div>
+				<!-- Skills Accordion end -->
+			</div>
+			<!-- row end -->
+		</div>
+	</div>
+
+		<!-- #--------ABOUT ME END------- -->
+
+		<!-- #--------PROJECTS------------ -->
+		<div id="Projects" class="container rounded base2">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-4">
+					<img class="img-fluid" src="images/doodle/me-project.png" alt="Projects Image">
+				</div>
+				<div class="col-12 col-md-8">
+					<h2 class="m-3">See What I Worked On!</h2>
+					<a href="sample.html" target="_blank" class="custLink">
+						<div class="p-3 rounded border project row align-items-center mr-3">
+							<div class="col-12 col-md-3 order-md-2">
+								<img src="images/doodle/draw.jpg" class="img-fluid w-75 rounded-circle ml-3" alt="draw">
+							</div>
+							<div class="col-12 col-md-9">
+								<h5>Drawing</h5>
+								<p class="mt-3">This is a personal website for an artist. It contains gallery of artworks, information on the artist and contact details. Click me to check it out!</p>
+							</div>
+						 </div>
+					</a>
+					<a href="sample.html" target="_blank" class="custLink">
+						<div class="p-3 rounded border my-4 project row align-items-center mr-3">
+							<div class="col-12 col-md-3">
+								<img src="images/doodle/play.jpg" class="img-fluid w-75 rounded-circle ml-3" alt="play">
+							</div>
+							<div class="col-12 col-md-9">
+								<h5>Gaming</h5>
+								<p class="mt-3">This is a personal website for a gamer. It contains list of all games played, tips and reviews per game.</p>
+							</div>
+						</div>
+					</a>
+					<a href="sample.html" target="_blank" class="custLink">
+					 	<div class="p-3 rounded border project row align-items-center mr-3">
+					 		<div class="col-12 col-md-3 order-md-2">
+					 			 <img src="images/doodle/travel.jpg" class="img-fluid w-75 ml-3 rounded-circle" alt="travel">
+					 		</div>
+					 		<div class="col-12 col-md-9">
+					 			<h5>Travelling</h5>
+					 			<p class="mt-3">This is a travel blog. It contains itinerary of activities, budget, reviews and details on the destination.</p>
+					 		</div>
+					 	</div>
+					</a>
+				</div>
+			</div>
+			<!-- projects row end -->
+			
+		</div>
+		<!-- #--------PROJECTS END-------- -->
+
+		<!-- #---------CONTACTS----------- -->
+		<div class="container base rounded"id="Contact">
+			<h2 class="m-3">Let's Work Together!</h2>
+			<div class="row align-items-center mr-md-3">
+				<div class="col-12 col-md-4 order-md-3">
+					<img src="images/doodle/me-contact.png" class="img-fluid" alt="Contact Me" title="Contact Me">
+				</div>
+				<div class="col-12 col-md-8">
+					<div class="row text-center">
+						<div class="col-12 col-md-8 mx-auto">
+
+							<!-- Form start -->
+							<form class="p-3 rounded w-md-50 w-100 mx-auto contactHolder">
+								<h3>Send me a message!</h3>
+								<!-- row -->
+								<div class="row mt-2">
+									<div class="form-group col-12 col-md-4">
+										 <select class="form-control" id="GenderSelect">
+										 	<option value="" selected disabled hidden>Gender</option>
+										 	<option>Mr.</option>
+										    <option>Ms.</option>
+										    <option>Mrs.</option>
+										    <option>None</option>
+										 </select>
+									</div>
+									<div class="form-group col-12 col-md-8">
+										<input type="text" class="form-control" id="Name" placeholder="Name">
+									</div>
+								</div>
+								<!-- row -->
+								<div class="form-group">
+									<input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+								</div>
+								<div class="form-group">
+									   <textarea class="form-control" id="taMessage" rows="3" placeholder="Message/Inquiry"></textarea>
+								</div>
+								<button class="btn d-block mx-auto btnCust" data-toggle="modal" data-target="#a1Modal">Send message</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="a1Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+									    	<div class="modal-header">
+									        	<h5 class="modal-title" id="ModalLabel">Thank you for contacting me!</h5>
+									        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									            	<span aria-hidden="true">&times;</span>
+									          	</button>
+									        </div>
+									        <div class="modal-body">
+									        	<p class="text-center">Message succesfully sent! This is a dummy message because I haven't learned Javascript yet :)</p>
+									        </div>
+									        <div class="modal-footer">
+									        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									        </div>
+									     </div>
+									</div>
+								</div>
+								<!-- modal end -->
+							</form>
+							<!-- form end -->
+						</div>
+						<!-- MAP -->
+						<div class="col-12 col-md-8 mx-auto my-4">
+							<div class="rounded p-3 w-md-50 w-100 mx-auto my-2 contactHolder">
+								<div class="accordion" id="accordionMap">
+									<div class="card">
+									<!-- accordion Map header -->
+									    <div class="card-header cardAcknowledgement py-2" id="headingMap">
+									    	<a href="#collapseMap" data-toggle="collapse" class="custLink"><h3>Find me here!</h3></a>
+									    </div>
+
+									    <!-- accordion Map body -->
+									    <div id="collapseMap" class="collapse" aria-labelledby="headingMap" data-parent="#accordionMap">
+									      	<div class="card-body cardAcknowledgement text-center">
+									      		<iframe class="w-100 h-50" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.4101322928077!2d121.04148921385479!3d14.632645089782056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7f5db7f5e3f%3A0xe15d2d6a4453ed00!2sZuitt%20QC!5e0!3m2!1sen!2sph!4v1644984950925!5m2!1sen!2sph" style="border: 0"allowfullscreen="" loading="lazy"></iframe>
+									      	</div>
+									    </div>
+									    <!-- accordion web development body end -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Social Media -->
+						<div class="col-12 col-md-8 mx-auto">
+							<div class="contactHolder rounded p-4" id="socialMediaAccts">
+								<h3>Get In Touch!</h3>
+								<div class="pt-3">
+									<a href="https://www.linkedin.com/in/carine-denise-cruz-81b561a4/" target="_blank"><img src="images/logo/linkedin.png" class="img-fluid social mx-2"></a>
+									<a href="https://www.facebook.com/carinedenise/" target="_blank"><img src="images/logo/facebook.png" class="img-fluid social mx-2"></a>
+									<a href="https://www.instagram.com/karin_cross/?hl=en" target="_blank"><img src="images/logo/instagram.png" class="img-fluid social mx-2"></a>
+									<a href="https://www.deviantart.com/jamesli" target="_blank"><img src="images/logo/deviantart.png" class="img-fluid social mx-2"></a>
+									<a href="https://gitlab.com/carine_cruz social" target="_blank"><img src="images/logo/gitlab.png" class="img-fluid social mx-2"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>	
+			</div>
+			
+		</div>
+		<!-- #---------CONTACTS END------ -->
+
+		<!-- #---------ACKNOWLDGEMENT START---- -->
+		<div class="container base2 rounded my-5">
+
+			<div class="accordion" id="accordionAcknowledgement">
+				<div class="card">
+				<!-- accordion acknowledgement header -->
+				    <div class="card-header cardAcknowledgement" id="headingAcknowledgement">
+				    	<h2><a href="#collapseAcknowledgement" data-toggle="collapse" class="custLink">Amazing People!</a></h2>
+				    </div>
+
+				    <!-- accordion acknowledgement body -->
+				    <div id="collapseAcknowledgement" class="collapse" aria-labelledby="headingAcknowledgement" data-parent="#accordionAcknowledgement">
+				      	<div class="card-body cardAcknowledgementtext-center">
+							<ul class="list-unstyled text-center align-items-center">
+								<center>
+								<li>
+									<a href="https://www.instagram.com/artbykatdanielle/" target="_blank">Personalized images by ArtByKatDanielle</a>
+								</li>
+								<hr>
+								<li>
+									<a href="https://muyotken.gitlab.io/capstone-1/index.html#accordionAbout" target="_blank">Reference from Ken Muyot</a>
+								</li>
+								<hr>
+								<li>
+									<a href="https://web.archive.org/web/20180819202235js_/http://seanhalpin.io/" target="_blank">Inspired from Sean Halpin</a>
+								</li>
+								<hr>
+								<li>
+									<a href="https://www.flaticon.com/free-icons/testing" title="testing icons">Testing icons created by iconixar - Flaticon</a>
+								</li>
+								<hr>
+								<li>
+									<a href="https://www.flaticon.com/free-icons/project-management" title="project management icons">Project management icons created by Flat Icons - Flaticon</a>
+								</li>
+								<hr>
+								<li>
+									<a href="https://www.flaticon.com/authors/Freepik" title="facebook icons">Facebook, Gitlab, DeviantArt and Instagram icons created by Freepik - Flaticon</a>
+								</li>
+								<hr>
+								<li>
+									<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Aldo Cervantes - Flaticon</a>
+								</li>
+							</center>
+							</ul>
+				      	</div>
+				    </div>
+				    <!-- accordion web development body end -->
+				</div>
+			</div>
+		</div>
+		<!-- #--------ACKNOWLEDGEMENT END------ -->
+
+	</main>
+
+	<!-- --------FOOTER START--------- -->
+	<footer>
+		<div class="text-center footer">
+			<span>All rights reserved. &#169 Carine Cruz</span>
+		</div>
+	</footer>
+	<!-- --------FOOTER END----------- -->
+	
+	<!-- bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	
+</body>
+</html>
