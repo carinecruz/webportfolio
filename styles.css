@@ -49,6 +49,10 @@ header{
 	transition: border-radius 1s, background-color 1s;
 }
 
+.navbar .dropdown-menu{
+	background-color: #22577E!important;
+}
+
 .navbar a:hover{
 	background-color:#5584AC;
 	color: #22577E;
@@ -144,13 +148,18 @@ header{
 h1{
 	color: #DAAF61;
 	font-family: 'Chango', cursive;
+	/*font-family: 'Days One', sans-serif;*/
+	/*font-family: 'Yusei Magic', sans-serif;*/
 }
 
 
 h2{
 	text-align: center;
 	color: #DAAF61;
-	font-family: 'Chango', cursive;
+	/*font-family: 'Chango', cursive;*/
+	font-family: 'Days One', sans-serif;
+	/*font-family: 'Yusei Magic', sans-serif;*/
+	font-weight: bold;
 }
 
 
@@ -243,12 +252,21 @@ h2>.btn:focus{
 	/*background-color: #F6F2D4;*/
 	text-align: center;
 	/*padding: 10px;*/
-	font-family: 'Chango', cursive;
+	/*font-family: 'Chango', cursive;*/
+	font-family: 'Days One', sans-serif;
 }
 
 .cardAcknowledgement{
 	background-color: #D2EDEA;
 	font-family: 'Spinnaker', cursive;!important
+}
+/* ---- modal position --- */
+
+/*.modal{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
 }
 /*----- horizontal rules---------*/
 .jumbotron hr{

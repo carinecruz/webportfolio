@@ -17,7 +17,7 @@
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Blinker&family=Capriola&family=Chango&family=Great+Vibes&family=Spinnaker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Blinker&family=Capriola&family=Chango&family=Days+One&family=Great+Vibes&family=Paytone+One&family=Spinnaker&family=Yusei+Magic&display=swap" rel="stylesheet">
 
 	<title>Carine Cruz Portfolio</title>
 </head>
@@ -69,8 +69,14 @@
 					<img src="images/logo/logo2.png" alt="logo" class="img-fluid px-5 logoImg">
 					</center>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link px-5" href="#Projects">Projects</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle px-5" id="navProjectsDropdown" data-toggle="dropdown">Projects</a>
+					<div class="dropdown-menu text-center" aria-labelledby="navProjectsDropdown">
+						<a href="#Projects"><span>Project_List</span></a>
+						<a href="sample.html" target="_blank">Drawing</a>
+						<a href="sample.html" target="_blank">Gaming</a>
+						<a href="sample.html" target="_blank">Travelling</a>
+					</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link px-5" href="#Contact">Contact</a>
@@ -115,7 +121,7 @@
 				<div>
 					<h2 class="m-3">Get To Know Me!</h2>
 					<div class="bg-light rounded p-4 mb-4">
-						<p>I am Carine Denise Cruz. I have graduated from Centro Escolar University with Bachelor of Science in Computer Science and Information System in 2010. I have worked at a bank as an application support for clearing operations and corebanking.</p>
+						<p>I am Carine Denise Cruz. I have graduated from Centro Escolar University with Bachelor of Science in Computer Science and Information System. I have worked at a bank as an application support for clearing operations and corebanking.</p>
 						<p>I have joined <a href="https://zuitt.co/" target="_blank" class="custLink">Zuitt Boot Camp</a> in early 2022 where I learned MERN stack (Mongo Express Database, React Javascript, Node Javascript).</p>
 						<p>You can view my social media accounts <a href="#socialMediaAccts" class="custLink">here</a>.</p>
 					</div>
@@ -166,8 +172,8 @@
 				      		<div class="card-body">
 				      			<div class="text-center bg-light d-flex flex-wrap justify-content-center rounded m-1">
 				      				<img class="img-fluid skills" src="images/skills/resized/logo-aix.png" alt="AIX" title="AIX">
-				      				<img class="img-fluid skills" src="images/skills/resized/logo-finacle.jpg" alt="Finacle scirpt" title="Finacle script">
-				      				<img class="img-fluid skills" src="images/skills/resized/logo-java.jpg" alt="Java" title="Java">
+				      				<img class="img-fluid skills" src="images/skills/resized/logo-finacle.png" alt="Finacle scirpt" title="Finacle script">
+				      				<img class="img-fluid skills" src="images/skills/resized/logo-java.png" alt="Java" title="Java">
 				      				<img class="img-fluid skills" src="images/skills/resized/logo-oracle.png" alt="Oracle" title="Oracle">
 				      				<img class="img-fluid skills" src="images/skills/resized/logo-os2.png" class="bg-black" alt="Outsystems" title="Certified Outsystems Associate Mobile Developer">
 				      				<img class="img-fluid skills" src="images/skills/resized/logo-postgre.png" alt="PostgreSQL" title="PostGreSQL">
@@ -238,6 +244,7 @@
 			<!-- projects row end -->
 			
 		</div>
+
 		<!-- #--------PROJECTS END-------- -->
 
 		<!-- #---------CONTACTS----------- -->
@@ -254,7 +261,7 @@
 							<!-- Form start -->
 							<form class="p-3 rounded w-md-50 w-100 mx-auto contactHolder">
 								<h3>Send me a message!</h3>
-								<!-- row -->
+								<!-- row start-->
 								<div class="row mt-2">
 									<div class="form-group col-12 col-md-4">
 										 <select class="form-control" id="GenderSelect">
@@ -269,7 +276,7 @@
 										<input type="text" class="form-control" id="Name" placeholder="Name">
 									</div>
 								</div>
-								<!-- row -->
+								<!-- row end-->
 								<div class="form-group">
 									<input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
 								</div>
@@ -277,29 +284,30 @@
 									   <textarea class="form-control" id="taMessage" rows="3" placeholder="Message/Inquiry"></textarea>
 								</div>
 								<button class="btn d-block mx-auto btnCust" data-toggle="modal" data-target="#a1Modal">Send message</button>
-
-								<!-- Modal -->
-								<div class="modal fade" id="a1Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-									<div class="modal-dialog">
-										<div class="modal-content">
-									    	<div class="modal-header">
-									        	<h5 class="modal-title" id="ModalLabel">Thank you for contacting me!</h5>
-									        	<button type="button" class="close" data-dismiss="modal" aria-label="Close" formtarget="#Contact">
-									            	<span aria-hidden="true">&times;</span>
-									          	</button>
-									        </div>
-									        <div class="modal-body">
-									        	<p class="text-center">Message succesfully sent! This is a dummy message because I haven't learned Javascript yet :)</p>
-									        </div>
-									        <div class="modal-footer">
-									        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									        </div>
-									     </div>
-									</div>
-								</div>
-								<!-- modal end -->
 							</form>
 							<!-- form end -->
+
+							<!-- Modal -->
+							<div class="modal fade" id="a1Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+								    	<div class="modal-header">
+								        	<h5 class="modal-title" id="ModalLabel">Thank you for contacting me!</h5>
+								        	<button type="button" class="close" data-dismiss="modal" aria-label="Close" formtarget="#Contact">
+								            	<span aria-hidden="true">&times;</span>
+								          	</button>
+								        </div>
+								        <div class="modal-body">
+								        	<p class="text-center">Message succesfully sent! This is a dummy message because I haven't learned Javascript yet :)</p>
+								        </div>
+								        <div class="modal-footer">
+								        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								        </div>
+								     </div>
+								</div>
+							</div>
+							<!-- modal end -->
+
 						</div>
 						<!-- MAP -->
 						<div class="col-12 col-md-8 mx-auto my-4">
@@ -322,26 +330,35 @@
 								</div>
 							</div>
 						</div>
+
 						<!-- Social Media -->
 						<div class="col-12 col-md-8 mx-auto">
 							<div class="contactHolder rounded p-4" id="socialMediaAccts">
 								<h3>Get In Touch!</h3>
 								<div class="pt-3">
-									<a href="https://www.linkedin.com/in/carine-denise-cruz-81b561a4/" target="_blank"><img src="images/logo/linkedin.png" class="img-fluid social mx-2"></a>
-									<a href="https://www.facebook.com/carinedenise/" target="_blank"><img src="images/logo/facebook.png" class="img-fluid social mx-2"></a>
-									<a href="https://www.instagram.com/karin_cross/?hl=en" target="_blank"><img src="images/logo/instagram.png" class="img-fluid social mx-2"></a>
-									<a href="https://www.deviantart.com/jamesli" target="_blank"><img src="images/logo/deviantart.png" class="img-fluid social mx-2"></a>
-									<a href="https://gitlab.com/carine_cruz social" target="_blank"><img src="images/logo/gitlab.png" class="img-fluid social mx-2"></a>
+									<a href="https://www.linkedin.com/in/carine-denise-cruz-81b561a4/" target="_blank"><img src="images/logo/linkedin.png" class="img-fluid social mx-2" alt="Linkedin" title="Linkedin"></a>
+									<a href="https://www.facebook.com/carinedenise/" target="_blank"><img src="images/logo/facebook.png" class="img-fluid social mx-2" alt="Facebook" title="Facebook"></a>
+									<a href="https://www.instagram.com/karin_cross/?hl=en" target="_blank"><img src="images/logo/instagram.png" class="img-fluid social mx-2" alt="Instagram" title="Instagram"></a>
+									<a href="https://www.deviantart.com/jamesli" target="_blank"><img src="images/logo/deviantart.png" class="img-fluid social mx-2" alt="DeviantArt" title="Deviant Art"></a>
+									<a href="https://gitlab.com/carine_cruz social" target="_blank"><img src="images/logo/gitlab.png" class="img-fluid social mx-2" alt="Gitlab" title="Gitlab"></a>
+									<a href="https://github.com/carinecruz" target="_blank"><img src="images/logo/github.png" class="img-fluid social mx-2" alt="Github" title="Github"></a>
 								</div>
 							</div>
 						</div>
+
 					</div>
+					<!-- end row for form, map and social media -->
 				</div>
-				
+				<!-- end column: row: form, map, social media -->
+
 			</div>	
+
 			</div>
 			
 		</div>
+		<!-- container end -->
+
+
 		<!-- #---------CONTACTS END------ -->
 
 		<!-- #---------ACKNOWLDGEMENT START---- -->
@@ -385,6 +402,10 @@
 								<hr>
 								<li>
 									<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Aldo Cervantes - Flaticon</a>
+								</li>
+								<hr>
+								<li>
+									<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
 								</li>
 							</center>
 							</ul>
