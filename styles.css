@@ -136,6 +136,13 @@ header{
 	margin: 0;
 }
 
+.jumbotron hr{
+	border-top: 5px dotted;
+	width: 75%;
+	text-align: center;
+	padding: 0;
+}
+
 .jImage{
 	bottom: 0;
 	height: auto;
