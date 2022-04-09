@@ -106,6 +106,10 @@ header{
 	text-align: center;*/
 }
 
+.projectImg{
+	width: 10%;
+}
+
 /*--- back ground color ----*/
 .base{
 	background-color: #F6F2D4;
