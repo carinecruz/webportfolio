@@ -20,6 +20,33 @@
 	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Blinker&family=Capriola&family=Chango&family=Days+One&family=Great+Vibes&family=Paytone+One&family=Spinnaker&family=Yusei+Magic&display=swap" rel="stylesheet">
 
 	<title>Carine Cruz Portfolio</title>
+
+	<!-- email js script -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+	    (function() {
+	        // https://dashboard.emailjs.com/admin/account
+	        emailjs.init('5CByAeRjFRdVbRYoe');
+	    })();
+	</script>
+
+	<script type="text/javascript">
+	    window.onload = function() {
+	        document.getElementById('sendMail').addEventListener('submit', function(e) {
+	            e.preventDefault();
+	       
+	            // these IDs from the previous steps
+	            emailjs.sendForm('service_ijfe8w9', 'contact_form', this)
+	                .then(function() {
+	                    alert(`Message sent!`)
+	                }, function(error) {
+	                	alert(`Sending failed`)
+	                    console.log('FAILED', error);
+	                });
+	        });
+	    }
+	</script>
+
 </head>
 <body>
 
@@ -73,9 +100,8 @@
 					<a class="nav-link dropdown-toggle px-5" id="navProjectsDropdown" data-toggle="dropdown">Projects</a>
 					<div class="dropdown-menu text-center" aria-labelledby="navProjectsDropdown">
 						<a href="#Projects"><span>Project_List</span></a>
-						<a href="sample.html" target="_blank">Drawing</a>
-						<a href="sample.html" target="_blank">Gaming</a>
-						<a href="sample.html" target="_blank">Travelling</a>
+						<a href="#Projects" target="_blank">E-commerce API</a>
+						<a href="https://the-bakery-ph.netlify.app/" target="_blank">E-commerce Website</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -293,12 +319,12 @@
 						<div class="col-12 col-md-8 mx-auto">
 
 							<!-- Form start -->
-							<form class="p-3 rounded w-md-50 w-100 mx-auto contactHolder">
+							<form class="p-3 rounded w-md-50 w-100 mx-auto mb-3 contactHolder" id="sendMail">
 								<h3>Send me a message!</h3>
 								<!-- row start-->
 								<div class="row mt-2">
 									<div class="form-group col-12 col-md-4">
-										 <select class="form-control" id="GenderSelect">
+										 <select class="form-control" id="genderSelect" name="gender">
 										 	<option value="" selected disabled hidden>Gender</option>
 										 	<option>Mr.</option>
 										    <option>Ms.</option>
@@ -307,22 +333,24 @@
 										 </select>
 									</div>
 									<div class="form-group col-12 col-md-8">
-										<input type="text" class="form-control" id="Name" placeholder="Name">
+										<input type="text" class="form-control" id="name" placeholder="Name" name="name">
 									</div>
 								</div>
 								<!-- row end-->
 								<div class="form-group">
-									<input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+									<input type="email" class="form-control" id="emailAddress" placeholder="Email Address" name="email">
 								</div>
 								<div class="form-group">
-									   <textarea class="form-control" id="taMessage" rows="3" placeholder="Message/Inquiry"></textarea>
+									   <textarea class="form-control" id="message" rows="3" placeholder="Message/Inquiry" name="message"></textarea>
 								</div>
-								<button class="btn d-block mx-auto btnCust" data-toggle="modal" data-target="#a1Modal">Send message</button>
+								<button 
+									class="btn d-block mx-auto btnCust" 
+									type="submit">Send message</button>
 							</form>
 							<!-- form end -->
 
 							<!-- Modal -->
-							<div class="modal fade" id="a1Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+	<!-- 						<div class="modal fade" id="a1Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
 								<div class="modal-dialog modal-dialog-centered">
 									<div class="modal-content">
 								    	<div class="modal-header">
@@ -332,37 +360,16 @@
 								          	</button>
 								        </div>
 								        <div class="modal-body">
-								        	<p class="text-center">This is a dummy message because I haven't learned Javascript yet :)</p>
+								        	<p class="text-center">Your email message has been sent!</p>
 								        </div>
 								        <div class="modal-footer">
 								        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 								        </div>
 								     </div>
 								</div>
-							</div>
+							</div> -->
 							<!-- modal end -->
 
-						</div>
-						<!-- MAP -->
-						<div class="col-12 col-md-8 mx-auto my-4">
-							<div class="rounded p-3 w-md-50 w-100 mx-auto my-2 contactHolder">
-								<div class="accordion" id="accordionMap">
-									<div class="card">
-									<!-- accordion Map header -->
-									    <div class="card-header cardAcknowledgement py-2" id="headingMap">
-									    	<a href="#collapseMap" data-toggle="collapse" class="custLink"><h3>Find me here!</h3></a>
-									    </div>
-
-									    <!-- accordion Map body -->
-									    <div id="collapseMap" class="collapse" aria-labelledby="headingMap" data-parent="#accordionMap">
-									      	<div class="card-body cardAcknowledgement text-center">
-									      		<iframe class="w-100 h-50" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.4101322928077!2d121.04148921385479!3d14.632645089782056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7f5db7f5e3f%3A0xe15d2d6a4453ed00!2sZuitt%20QC!5e0!3m2!1sen!2sph!4v1644984950925!5m2!1sen!2sph" style="border: 0"allowfullscreen="" loading="lazy"></iframe>
-									      	</div>
-									    </div>
-									    <!-- accordion web development body end -->
-									</div>
-								</div>
-							</div>
 						</div>
 
 						<!-- Social Media -->
@@ -460,6 +467,11 @@
 	<!-- bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- my JS -->
+	<!-- <script src="./index.js"></script> -->
+
+
 	
 </body>
 </html>
